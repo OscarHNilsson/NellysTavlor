@@ -21,7 +21,6 @@ C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\rjsmcshtml.d
 C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\scopedcss\bundle\Paintings.styles.css
 C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\scopedcss\projectbundle\Paintings.bundle.scp.css
-C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\compressed\9x7dtd2ocq-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\compressed\pbuw0tlw67-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\compressed\axkszc0qbc-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\compressed\x1hl9q89m5-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -95,3 +94,5 @@ C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\refint\Paint
 C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\Paintings.pdb
 C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\Paintings.genruntimeconfig.cache
 C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\ref\Paintings.dll
+C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\Paintings.sourcelink.json
+C:\Users\oscar\Documents\Code\paintings\Paintings\obj\Debug\net10.0\compressed\9x7dtd2ocq-{0}-6b80pg7wfa-6b80pg7wfa.gz
