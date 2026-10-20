@@ -1,18 +1,23 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Paintings.Data;
+using Paintings.Models;
 
 namespace Paintings.Pages;
 
 public class IndexModel : PageModel
 {
+    private readonly PaintingContext _context;
 
-    public List<string> ImageFiles { get; set; } = new();
+    public IndexModel(PaintingContext context)
+    {
+        _context = context;
+    }
+
+    public List<Painting> Paintings { get; set; } = new();
 
     public void OnGet()
     {
-        var imageDir = Path.Combine("wwwroot", "images");
-        ImageFiles = Directory.GetFiles(imageDir)
-            .Select(f => "/images/" + Path.GetFileName(f))
-            .ToList();
+        Paintings = _context.Paintings.OrderByDescending(p => p.UploadedAt).ToList();
     }
 }

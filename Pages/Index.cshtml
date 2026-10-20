@@ -5,11 +5,30 @@
 }
 
 <div class="gallery">
-    @foreach (var img in Model.ImageFiles)
+    @foreach (var painting in Model.Paintings)
     {
-        <div class="card">
-            <img src="@img" alt="" />
-            <div class="card-caption">@System.IO.Path.GetFileNameWithoutExtension(img)</div>
+        <div class="card" onclick="openModal('@painting.ImagePath')">
+            <img src="@painting.ImagePath" alt="@painting.Title" />
+            <div class="card-caption">
+                <strong>@painting.Title</strong><br />
+                @painting.Medium — @painting.Width" x @painting.Height"
+            </div>
         </div>
     }
 </div>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <button class="modal-arrow modal-arrow-left" onclick="event.stopPropagation(); showPrev()">&#10094;</button>
+    <img id="modalImage" src="" alt="" onclick="event.stopPropagation()" />
+    <button class="modal-arrow modal-arrow-right" onclick="event.stopPropagation(); showNext()">&#10095;</button>
+</div>
+
+<script>
+    const galleryImages = [
+    @foreach (var painting in Model.Paintings) {
+        @:"@painting.ImagePath",
+    }
+    ];
+</script>
+
+<script src="~/js/gallery.js"></script>
