@@ -1,12 +1,14 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Authorization;
 using Paintings.Data;
 using Paintings.Models;
 using Paintings.Services;
 
 namespace Paintings.Pages;
 
+[Authorize]
 public class AdminModel : PageModel
 {
     private readonly PaintingContext _context;
