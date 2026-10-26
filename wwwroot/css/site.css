@@ -64,8 +64,10 @@ body {
     flex: 1;
     min-height: 0;
     object-fit: contain;
+    object-position: center top;
     display: block;
     background: #fff;
+    padding: 5px;
 
     cursor: pointer;
 }
